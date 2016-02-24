@@ -13,7 +13,7 @@ This lesson will cover the synchronous code on the example of the `fs` module.
 1. Illustrate sync code with `fs` file read method
 1. Illustrate sync code with `fs` file write method
 
-## fs.readFileSync()
+## `fs.readFileSync()`
 
 The method for reading file content has this usage:
 
