@@ -70,7 +70,7 @@ The output will have "Start reading file" and "Finish reading file" in that orde
 
 ## fs.writeFileSync()
 
-The synchronous method for writing to a file has this usage:
+The `writeFileSync` has the same use cases as the other synchronous methods with the main being easier to read and understand (by developers). The synchronous method for writing to a file has this usage:
 
 ```js
 fs.writeFileSync(filename, content, options)
@@ -83,6 +83,10 @@ console.log('Start reading file')
 fs.writeFileSync(filename, content, options)
 console.log('Finish reading file')
 ```
+
+`fs` has other synchronous methods but the idea is usually the same—you get the data as the result of the expression and the next line is executed **after** the synchronous method is done.
+
+In most cases, we are dealing with concurrency and so we must use asynchronous code to make our apps performant. Nevertheless, you should know that it's possible so write synchronous code and when it's appropriate. 
 
 ---
 
